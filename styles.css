@@ -1,0 +1,412 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap');
+
+:root{
+    --light-bleu:#3EE9E5;
+    --dark-bleu: #093F68;
+    --grey:#777F98;
+    --ligh-white: #FFFFFF;
+    --dark-black:#080C20;
+    --light-red:#FF2965;
+}
+*{
+    padding: 0 ;
+    box-sizing: border-box;
+    color: var(--dark-black);
+  }
+  body{
+    background-color: var(--dark-black);
+  }
+
+    /* TYPOGHRAPHIE */
+
+h1{
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 56px; /* 116.667% */
+}
+h2{
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+h3{
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+h4{
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+p{
+    color: #777F98;
+    font-family: Manrope;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px; /* 166.667% */
+}
+
+/* BUTTONS */
+.email-button{
+    width: 140px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: #3EE9E5;
+}
+.email-button:hover {
+  background: transparent;
+  color: white;
+  border-color: var(--light-bleu);
+}
+
+/* navbar */
+.logo{
+    margin-left: 10%;
+    margin-top: 81px;
+    margin-bottom: 115px;
+}
+.logo img{
+  padding: 0  ;
+}
+
+
+/* home background */
+.home-background {
+  display: flex;
+  justify-content: space-between;
+  }
+  
+  .middel-img {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 40px;
+  }
+  
+  .text-home {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+  
+  .bottom-image {
+  display: flex;
+  align-self: center;
+  
+  }
+  
+  .home-background img {
+  max-width: 100%;
+  height: auto;
+  }
+  .imgg{
+    display: none;
+  }
+  
+  @media (max-width: 1014px) {
+  h1{
+  color: #FFF;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 56px; /* 116.667% */
+  }
+  .bottom-image {
+  margin-top: 10%;
+  }
+  .text-home {
+  top: -60px;
+  }
+  }
+
+@media (max-width: 754px) {
+  .image-lign {
+    display: none;
+  }
+  
+  .home-background {
+    flex-direction: column;
+  }
+  
+  .left-img img,
+  .right-img img {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .middel-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text-home {
+    text-align: center;
+    margin-top: 20px;
+    position: static;
+  }
+  .imgg {
+    display: block;
+    width: 100%;
+  }
+  .imgg img{
+    width: 100%;
+    padding: 0;
+  }
+  
+}
+
+
+
+
+
+/* cards */
+.cards {
+  margin-top: 20%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.card-content {
+  flex: 1 1 auto;
+  margin-bottom: 20px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.card-content p {
+  width: 100%;
+}
+
+.second-card,
+.fourth-card {
+  margin-top: 10%;
+}
+
+@media (max-width: 769px) {
+  .cards {
+    flex-wrap: wrap;
+    margin-top: 30%;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-content {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .card-content img {
+    width: 30%;
+    margin-right: 2%;
+    margin-bottom: 10px;
+  }
+
+  .card-content h4,
+  .card-content p {
+    width: 100%;
+    text-align: left;
+  }
+
+  .second-card,
+  .fourth-card {
+    margin-top: 0;
+  }
+
+  .first-card,
+  .thirth-card {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 425px) {
+  .cards {
+    flex-wrap: wrap;
+    margin-top: 50%;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-content img {
+    width: 40%;
+    margin-bottom: 10px;
+  }
+
+  .first-card,
+  .thirth-card {
+    margin-left: 0;
+  }
+  .second-card,
+  .fourth-card {
+    margin-top: 0;
+  }
+
+  .card-content h4,
+  .card-content p {
+    text-align: center;
+  }
+}
+
+/* price */
+
+.titre-price{
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6%;
+}
+.titre-price p{
+  width: 50%;
+  text-align: center;
+}
+
+.card-price{
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+  width: 70%;
+  align-items: center;
+  margin: 0 auto;
+  
+ 
+}
+.free-price{
+  background-color: var(--dark-bleu);
+  border-radius: 8px;
+  padding: 6px 0;
+}
+.pro-card{
+  background-color: var(--light-bleu);
+  border-radius: 8px;
+  padding: 30px 0;
+
+}
+.pro-card p{
+color: #080C20;
+}
+
+.free-price p , h2 ,h4,img{
+  padding-left: 10%;
+}
+.pro-card p , h2 ,h4,img{
+  padding-left: 10%;
+}
+
+.proprites-price .item {
+  margin-bottom: 20px; 
+}
+
+.pro-card span{
+  color: #080C20;
+
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 166.667% */
+}
+
+@media (max-width: 769px) {
+.card-price{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 70%;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+   
+}
+}
+
+
+/* FOOter */
+footer{
+  background-image: url(./asstes/BB.png);
+  background-size:cover;
+  margin-top: 10%;
+  width: 100%;
+  height: 264px;
+  margin-bottom: 10%;
+}
+
+.email{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.email-input {
+  width: 320px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #093F68;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+@media (max-width: 501px) {
+  .email{
+    flex-direction: column;
+    align-items: center;
+  }
+  .email-button{
+    width: 80vw;
+
+}
+footer{
+  margin-bottom: 40%;
+}
+.email-input {
+  width: 80vw;
+
+}
+}
+
+
+#error-message {
+  bottom: -20px; 
+  color: red;
+  font-size: 14px;
+}
